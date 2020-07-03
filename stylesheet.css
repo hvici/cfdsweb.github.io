@@ -1,32 +1,35 @@
-* {
-  box-sizing: border-box;
+/* Reset CSS (DO NOT DELETE) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: "Lucida Grande";
+  font-family: "Perpetua";
+}
+
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
-.clear {
-  clear: left;
-}
-
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
+/* Write your code below */
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-image: url(https://media.audleytravel.com/-/media/images/home/southeast-asia/indonesia/letterbox-images/new-istock/istock_000064395279_mountain_range_in_komodo_national_park.jpg);
   background-size: cover;
   color: white;
   text-align: center;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .top-wrapper h1 {
@@ -42,7 +45,6 @@ a {
 }
 
 .btn-wrapper {
-  text-align: center;
   margin: 20px 0;
 }
 
@@ -69,7 +71,6 @@ a {
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
-  text-align: center;
 }
 
 .btn:hover {
@@ -81,17 +82,18 @@ a {
 }
 
 header {
-  height: 65px;
+  height: 70px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
+  background-color: #646a54;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 .header-left {
@@ -100,7 +102,12 @@ header {
 
 .header-right {
   float: right;
-  margin-right: -25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .header-right a {
@@ -108,33 +115,18 @@ header {
   padding: 0 25px;
   color: white;
   display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
 }
 
 .lesson-wrapper {
+  height: 500px;
   padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
   background-color: #f7f7f7;
   text-align: center;
 }
 
 .heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   color: #5f5d60;
 }
 
@@ -142,7 +134,7 @@ header {
   font-weight: normal;
 }
 
-.lesson {
+.travel {
   float: left;
   width: 25%;
 }
@@ -153,15 +145,15 @@ header {
 
 .lesson-icon p {
   position: absolute;
-  top: 44%;
+  top: 90px;
   width: 100%;
   color: white;
 }
 
-.text-contents {
+.txt-contents {
   width: 80%;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 15px;
   color: #b3aeb5;
 }
@@ -189,16 +181,6 @@ header {
   box-shadow: none;
 }
 
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+.footer-dark {
+  background-color: #343434;
 }
